@@ -1,0 +1,246 @@
+@media screen and (max-width: 1440px) {
+  .big-card {
+    min-height: 30vh;
+  }
+  .trending-song-card {
+    width: 9rem;
+  }
+  .playing-bar {
+    top: 89vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title-combo {
+    width: 14%;
+    display: inline-block;
+  }
+
+  .website-logo {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .favourites-part {
+    font-size: 1rem;
+  }
+
+  .notification-bell .text {
+    font-size: 1.2rem;
+  }
+
+  .search-logo {
+    width: 15%;
+  }
+
+  .search-bar input {
+    width: 66%;
+  }
+
+  .microphone-logo {
+    width: 15%;
+  }
+
+  .aside-section-1 h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .aside-section-2 h2 {
+    font-size: 1.3rem;
+  }
+
+  .recent-played-card .song-card {
+    width: 48%;
+  }
+
+  .recent-played-card .song-descreption h3 {
+    font-size: 1rem;
+  }
+
+  .recent-played-card .song-card img {
+    height: 4rem;
+  }
+
+  .recent-played-card .song-descreption {
+    text-align: center;
+  }
+
+  .trending-song-card {
+    width: 6rem;
+    height: 11rem;
+  }
+
+  .play-button-back {
+    top: 55%;
+    left: 65%;
+  }
+
+  .trending-song-card:hover .play-button-back {
+    top: 50%;
+    left: 65%;
+  }
+
+  .play-button-back i {
+    font-size: 0.8rem;
+  }
+
+  .artist-card-name {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .playlist-song-card img {
+    width: 23%;
+  }
+
+  .playlist-card .song-name h6 {
+    font-size: 0.7rem;
+  }
+
+  .playlist-card .song-name p {
+    font-size: 0.6rem;
+  }
+
+  .playing-bar {
+    top: 91vh;
+  }
+  .player-box .song-name {
+    width: 60%;
+  }
+
+  .player-box .song-name h6 {
+    font-size: 0.8rem;
+  }
+
+  .player-box .song-name p {
+    font-size: 0.7rem;
+  }
+
+  .player-box .song-name-card {
+    width: 28%;
+  }
+
+  .player-controls {
+    width: 43%;
+  }
+
+  .other-controls {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .big-card {
+    min-height: 20vh;
+  }
+
+  .recent-played-card .song-card img {
+    height: 3rem;
+  }
+
+  .recent-played-section {
+    top: 0vh;
+  }
+
+  main h2 {
+    font-size: 1rem;
+  }
+
+  .recent-played-card .song-descreption h3 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .trending-section {
+    top: 0vh;
+  }
+
+  .trending-song-card {
+    height: 10rem;
+    width: 6rem;
+  }
+
+  .artist-card-name {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .trending-song-card h3 {
+    font-size: 0.8rem;
+  }
+
+  .trending-song-card p {
+    font-size: 0.7rem;
+  }
+
+  .artist-section {
+    top: 0vh;
+  }
+
+  .made-for-you-section,
+  .dil-hai-filmy-section,
+  .more-by-armaan-mallik-section {
+    top: 0vh;
+  }
+
+  .player-bar {
+    top: 88vh;
+  }
+
+  .playing-bar .song-name-card {
+    width: 25%;
+  }
+
+  .player-box .song-name h6 {
+    font-size: 0.7rem;
+  }
+
+  .player-box .song-name p {
+    font-size: 0.6rem;
+  }
+
+  .player-controls {
+    width: 40%;
+  }
+
+  .control-buttons {
+    justify-content: space-around;
+  }
+
+  .control-buttons i {
+    font-size: 1rem;
+  }
+
+  .seek .time {
+    font-size: 0.8rem;
+  }
+
+  .other-controls {
+    justify-content: space-between;
+  }
+
+  .other-controls input {
+    width: 40%;
+  }
+
+  .other-controls i {
+    font-size: 0.8rem;
+  }
+
+  .playlist-song-card {
+    border-radius: 0.5rem;
+  }
+
+  .playlist-song-card img {
+    border-radius: 0.5rem;
+  }
+
+  .playlist-card h6 {
+    font-size: 0.6rem;
+  }
+
+  .playlist-card p {
+    font-size: 0.5rem;
+  }
+}

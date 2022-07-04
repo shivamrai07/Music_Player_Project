@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title Of the Page -->
+    <title>Audio wave</title>
+
+    <!-- Favicon Link -->
+    <link
+      rel="shortcut icon"
+      href="images/Favicon/favicon.jpg"
+      type="image/x-icon"
+    />
+
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/media_query.css" />
+
+    <!-- Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header-Part -->
+    <header>
+      <!-- Navigation-Bar -->
+      <!-- It Contains Logo,Favourites,Search-bar,Notification and User-login-icon -->
+      <nav id="navigation-bar">
+        <div class="title-combo">
+          <!-- Logo -->
+          <div class="website-logo">
+            <img src="images/Logo/Company-logo.jpg" alt="company-logo" />
+          </div>
+        </div>
+
+        <!-- Favourites -->
+        <!-- Animated with Zoom-in and Zoom-out 
+          animation process contains in animation.css file -->
+        <div class="favourites-part">
+          <h4>Favourites</h4>
+        </div>
+
+        <!-- Search-bar contain search-icon,input box and microphone-icon -->
+        <div class="search-bar">
+          <div class="search-logo">
+            <i class="fas fa-search"></i>
+          </div>
+          <input type="text" />
+          <div class="microphone-logo">
+            <i class="fas fa-microphone"></i>
+          </div>
+        </div>
+
+        <!-- Notification contain Bell icon and Notification Text with animated bell rotate at Y axis -->
+        <div class="notification-bell">
+          <i class="fas fa-bell"></i>
+          <div class="text">
+            <h5>Notification</h5>
+          </div>
+        </div>
+
+        <!-- User-icon -->
+        <div class="login-user">
+          <img src="images/user-photo.jpg" alt="user-photo" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- The main Section divides into two part one part contain all songs and other part contain playlist which was sticky that contains all song 
+    that was your favourites this was done by using flex. -->
+    <main>
+      <!-- This Section contain main songs list which have big image song, artist-section,Recently-played songs and all music card basis on your listen. -->
+      <div class="aside-section-1">
+        <!-- This contains big image-song -->
+        <div class="big-card-box">
+          <div class="big-card">
+            <img
+              src="images/Big-card-image-1.PNG"
+              alt="image-1"
+              class="image-1"
+            />
+            <img
+              src="images/Big-card-image-2.PNG"
+              alt="image-2"
+              class="image-2"
+            />
+            <img
+              src="images/Big-Card-image-3.png"
+              alt="image-3"
+              class="image-3"
+            />
+          </div>
+        </div>
+
+        <!-- This is Recently-played Section  -->
+        <div class="recent-played-section">
+          <!-- Recently-played Heading -->
+          <h2>Recently Played</h2>
+
+          <!-- Recently-played Music card using flex -->
+          <div class="recent-played-card">
+            <!-- Song-card contain image of song,name of song and animated play-button using flex -->
+            <div class="song-card">
+              <div>
+                <img src="images/recent-1.PNG" alt="song-1" />
+              </div>
+              <div class="song-descreption">
+                <h3>Yeh Jawaani Hai Deewani</h3>
+              </div>
+              <div class="play-button">
+                <div class="play-box">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-card">
+              <div>
+                <img src="images/recent-2.PNG" alt="song-2" />
+              </div>
+              <div class="song-descreption">
+                <h3>2 States</h3>
+              </div>
+              <div class="play-button">
+                <div class="play-box">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-card">
+              <div>
+                <img src="images/recent-3.PNG" alt="song-3" />
+              </div>
+              <div class="song-descreption">
+                <h3>Cheap Thrills</h3>
+              </div>
+              <div class="play-button">
+                <div class="play-box">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-card">
+              <div>
+                <img src="images/recent-4.PNG " alt="song-4" />
+              </div>
+              <div class="song-descreption">
+                <h3>Love me Like you Do</h3>
+              </div>
+              <div class="play-button">
+                <div class="play-box">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- This Section Trending song card which have images of albumn/song-image, Name of song and Singer name and played button -->
+        <div class="trending-section">
+          <!-- Trending-section-heading -->
+          <h2>Trending now</h2>
+
+          <!-- It contains all different trending song -->
+          <div class="trending-card">
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <div class="trending-song-card">
+                <div class="trending-image">
+                  <img src="./images/Trending-1.png" alt="Trending-1" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Naach Meri Raani</h3>
+                  <p>Guru Randhawa,Nikhita Gandhi,Tanishk Bagchi</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <div class="trending-song-card">
+                <div class="trending-image">
+                  <img src="./images/Trending-2.png" alt="Trending-2" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Care Ni Karda</h3>
+                  <p>Sweetaj Brar,Yo Yo Honey Singh</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <div class="trending-song-card">
+                <div class="trending-image">
+                  <img src="./images/Trending-3.png" alt="Trending-3" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Teri Aankhon Mein</h3>
+                  <p>Darshan Raval, Neha Kakkar, Mannan Bhardwaj</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <div class="trending-song-card">
+                <div class="trending-image">
+                  <img src="./images/Trending-4.png" alt="Trending-4" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Dil Kissko Du</h3>
+                  <p>Mellow D</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <div class="trending-song-card">
+                <div class="trending-image">
+                  <img src="./images/Trending-5.png" alt="Trending-5" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>BurjKhalifa(From "Laxmi")</h3>
+                  <p>Various Artists</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- This section contains various Artist card -->
+        <div class="artist-section">
+          <!-- Artist-section-heading -->
+          <h2>Popular Artist</h2>
+
+          <!-- Various Artist card -->
+          <div class="artist-card">
+            <div class="artist-card-name">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <img
+                  src="images/Artist-Photos/amit-trivedi.jpg"
+                  alt="Amit-Trivedi"
+                />
+                <figcaption class="artist-name">Amit Trivedi</figcaption>
+              </a>
+            </div>
+
+            <div class="artist-card-name">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <img
+                  src="images/Artist-Photos/Arijit singh.jpg"
+                  alt="Arijit Singh"
+                />
+                <figcaption class="artist-name">Arijit Singh</figcaption>
+              </a>
+            </div>
+
+            <div class="artist-card-name">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <img
+                  src="images/Artist-Photos/ED Sheeran.jpg"
+                  alt="ED-Sheeran"
+                />
+                <figcaption class="artist-name">ED Sheeran</figcaption>
+              </a>
+            </div>
+
+            <div class="artist-card-name">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <img
+                  src="images/Artist-Photos/Chainsmokers.jpg"
+                  alt="Chainsmokers"
+                />
+                <figcaption class="artist-name">Chain Smokers</figcaption>
+              </a>
+            </div>
+
+            <div class="artist-card-name">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <img
+                  src="images/Artist-Photos/Shankar Mahadevan.jpg"
+                  alt="Shankar Mahadevan"
+                />
+                <figcaption class="artist-name">Shankar Mahadevan</figcaption>
+              </a>
+            </div>
+
+            <div class="artist-card-name">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <img src="images/Artist-Photos/Pritam.jpg" alt="Pritam" />
+                <figcaption class="artist-name">Pritam</figcaption>
+              </a>
+            </div>
+
+            <div class="artist-card-name">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <img
+                  src="images/Artist-Photos/Armaan Mallik.jpg"
+                  alt="Armaan Mallik"
+                />
+                <figcaption class="artist-name">Armaan Mallik</figcaption>
+              </a>
+            </div>
+
+            <div class="artist-card-name">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <img
+                  src="images/Artist-Photos/Asha Bhosle.jpg"
+                  alt="Asha Bhosle"
+                />
+                <figcaption class="artist-name">Asha Bhosle</figcaption>
+              </a>
+            </div>
+
+            <div class="artist-card-name">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <img
+                  src="images/Artist-Photos/Alka Yagnik.jpg"
+                  alt="Alka Yagnik"
+                />
+                <figcaption class="artist-name">Alka Yagnik</figcaption>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- It conatins songs Playlist based on you listening -->
+        <div class="made-for-you-section">
+          <!-- Heading -->
+          <h2>Made For You</h2>
+          <p>Get better recommendations the more you listen</p>
+
+          <!-- Playlist-Card -->
+          <div class="trending-card">
+            <!-- Different Playlist Card  -->
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Daily Mix/Weekly.PNG" alt="Weekly" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Discover Weekly</h3>
+                  <p>
+                    Your weekly mixtape of fresh music. Enjoy new music and deep
+                    cuts picked for you. Updates every Monday.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img
+                    src="images/Daily Mix/Daily-mix-1.PNG"
+                    alt="Daily-Mix-1"
+                  />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Daily Mix 1</h3>
+                  <p>Emiway Bantai, Pritam, Atif Aslam and more</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img
+                    src="images/Daily Mix/Daily-mix-2.PNG"
+                    alt="Daily-Mix-2"
+                  />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Daily Mix 2</h3>
+                  <p>Kina, The Chainsmokers, Sia and more</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img
+                    src="images/Daily Mix/Daily-mix-3.PNG"
+                    alt="Daily-Mix-3"
+                  />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Daily Mix 3</h3>
+                  <p>Guru Randhawa, Vishal Shekhar and more</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img
+                    src="images/Daily Mix/Daily-mix-4.PNG"
+                    alt="Daily-Mix-4"
+                  />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Daily Mix 4</h3>
+                  <p>Badshah, Darshan Raval, Neha Kakkar and more</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Based on listening -->
+        <div class="dil-hai-filmy-section">
+          <!-- Heading -->
+          <h2>Dil Hai Filmy!</h2>
+
+          <!-- Different Playlist Card -->
+          <div class="trending-card">
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Dil Hai Filmy/filmy-1.jpg" alt="Filmy-1" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Bollywood Butter</h3>
+                  <p>
+                    The finest quality of Bollywood music handpicked for you.
+                    Cover- Arijit Singh
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Dil Hai Filmy/filmy-2.jpg" alt="Filmy-2" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Bollywood Mush</h3>
+                  <p>
+                    Best Bollywood love songs from last 5 years. Cover- Jubin
+                    Nautiyal
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Dil Hai Filmy/filmy-3.jpg" alt="Filmy-3" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Top Hits Hindi</h3>
+                  <p>
+                    Hottest Hindi music served here. Cover- Akshay Kumar & Nupur
+                    Sanon
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Dil Hai Filmy/filmy-4.jpg" alt="Filmy-4" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>New Music Hindi</h3>
+                  <p>
+                    Latest Hindi songs from last 3 months. Cover- Akshay Kumar &
+                    Vaani Kapoor
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Dil Hai Filmy/filmy-5.jpg" alt="Filmy-5" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Filmy Party</h3>
+                  <p>
+                    Bollywood beats to keep you dancing all night. Cover:
+                    Badshah
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Based on Mostly Played Artist Song like Different Artist -->
+        <div class="more-by-armaan-mallik-section">
+          <!-- Heading -->
+          <h2>More like Armaan Mallik</h2>
+
+          <!-- Different Artist Card like this Section contain Artist -->
+          <div class="trending-card">
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Armaan Mallik/Armaan-1.jpg" alt="Armaan-1" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Hero</h3>
+                  <p>Various Artists</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Armaan Mallik/Armaan-2.jpg" alt="Armaan-2" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Half Girlfriend</h3>
+                  <p>Various Artists</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Armaan Mallik/Armaan-3.jpg" alt="Armaan-3" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Rustom</h3>
+                  <p>Various Artists</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Armaan Mallik/Armaan-4.jpg" alt="Armaan-4" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Best of Palak Muchhal</h3>
+                  <p>Palak Muchhal</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="trending-song-card">
+              <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+                <div class="trending-image">
+                  <img src="images/Armaan Mallik/Armaan-5.jpg" alt="Armaan-5" />
+                  <div class="play-button-back">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="trending-song-name">
+                  <h3>Love Dose:Benny Dayal</h3>
+                  <p>Beny Dayal</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- This Section Contain Playlist of which have you saved to make your Playlist -->
+      <div class="aside-section-2">
+        <!-- Sticky to Whole Page -->
+        <div class="main-part-aside-section-2">
+          <!-- Heading -->
+          <h2>Playlist</h2>
+
+          <!-- Contains Different Songs which have you Saved in your Playlist -->
+          <div class="playlist-card">
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <div class="playlist-song-card">
+                <img src="images/Playlist-photos/playlist-1.jpg" alt="Song-1" />
+                <div class="song-name">
+                  <h6>Raataan Lambiyan</h6>
+                  <p>Tanishk Bagchi, Jubin Nautiyal, Asees Kaur</p>
+                </div>
+                <div class="play-playlist-button">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </a>
+
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <div class="playlist-song-card">
+                <img src="images/Playlist-photos/playlist-2.jpg" alt="Song-2" />
+                <div class="song-name">
+                  <h6>Thoda sa</h6>
+                  <p>Neel Chhabra, Kabir Pancholi, Shariva Parulkar</p>
+                </div>
+                <div class="play-playlist-button">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </a>
+
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <div class="playlist-song-card">
+                <img src="images/Playlist-photos/playlist-3.jpg" alt="Song-3" />
+                <div class="song-name">
+                  <h6>Tera Peeche</h6>
+                  <p>JusstRishabh</p>
+                </div>
+                <div class="play-playlist-button">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </a>
+
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <div class="playlist-song-card">
+                <img src="images/Playlist-photos/playlist-4.jpg" alt="Song-4" />
+                <div class="song-name">
+                  <h6>Laal Bindi</h6>
+                  <p>Akull</p>
+                </div>
+                <div class="play-playlist-button">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </a>
+
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <div class="playlist-song-card">
+                <img src="images/Playlist-photos/playlist-5.jpg" alt="Song-5" />
+                <div class="song-name">
+                  <h6>Ranjha</h6>
+                  <p>Jaslen Royal, B Praak</p>
+                </div>
+                <div class="play-playlist-button">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Music Playing Control Box -->
+    <!-- It contains controls like play-button,previous button,song-image, Song Name,Singer Name and more controls like volume up and down,etc. -->
+    <div class="playing-bar">
+      <footer class="player-box">
+        <!-- It contains Song-image ,Name and Singer name -->
+        <div class="song-name-card">
+          <img src="images/player-box image.jpg" alt="player-box-image" />
+          <div class="song-name">
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <h6>Raataan Lambiyan</h6>
+            </a>
+            <a href="./SinglePlaylist/SinglePlaylist.htm" target="_blank">
+              <p>Tanishk Bagchi, Jubin Nautiyal, Asees Kaur</p>
+            </a>
+          </div>
+          <div class="favourite-heart">
+            <a href="#">
+              <i class="far fa-heart"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Music Playing-controls -->
+        <div class="player-controls">
+          <div class="control-buttons">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-play"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+          </div>
+          <div class="seek">
+            <div class="time">0:00</div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              name="slider"
+              id="myRange"
+            />
+            <div class="time">4:30</div>
+          </div>
+        </div>
+
+        <!-- Other Controls -->
+        <div class="other-controls">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-laptop"></i>
+          <i class="fas fa-volume-up"></i>
+          <input type="range" name="slider" id="volume-up" />
+          <i class="fas fa-expand-alt"></i>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
